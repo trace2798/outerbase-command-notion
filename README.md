@@ -43,7 +43,6 @@ Running commands with npm `npm run [command]`
 | `build`         | To build your application                |
 | `start`         | Starts a production  instance of the app |
 
- "postinstall": "prisma generate" is required if you want to deploy your site.
 
-## For integrating Notion with Outerbase I have wrote a very detailed article on [hashnode](https://shreyas-chaliha.hashnode.dev/integrating-notion-with-outerbase)
+## For integrating Notion with Outerbase I have wrote a very detailed article on [Hashnode](https://shreyas-chaliha.hashnode.dev/integrating-notion-with-outerbase)
 
