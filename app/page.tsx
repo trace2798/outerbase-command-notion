@@ -7,7 +7,6 @@ export default async function Home() {
         "content-type": "application/json",
       },
       cache: "no-cache",
-      next: { revalidate: 10 },
     }
   );
   const data = await database.json();
@@ -27,7 +26,7 @@ export default async function Home() {
           </tr>
         </thead>
         <tbody>
-          {results.map((item: any) => (
+          {results.slice().reverse().map((item: any) => (
             <tr key={item.id} className="border-b">
               <td className="px-4 py-2">
                 {item.properties.Task.title[0].plain_text}
