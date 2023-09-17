@@ -23,7 +23,7 @@ export default async function Home() {
           <thead>
             <tr>
               <th className="px-4 py-2">Task</th>
-              <th className="px-4 py-2">Status</th>
+              <th className="px-4 py-2">Relation</th>
               <th className="px-4 py-2">Note</th>
             </tr>
           </thead>
@@ -33,7 +33,7 @@ export default async function Home() {
               .reverse()
               .map((item: any) => (
                 <tr key={item.id} className="border-b">
-                  <td className="px-4 py-2">
+                  <td className="px-4 py-2 max-w-sm">
                     {item.properties.Task.title[0].plain_text}
                   </td>
                   <td className="px-4 py-2">
